@@ -1,0 +1,2 @@
+# unBurden
+Young Adult Campers want to plan and organize the packing process of camping. unBurden is a shared tasklist application that lets users plan which items need to be packed and declare their intentions to a group which they will be responsible for bringing. Unlike other shared tasklist applications, our product will be specialized toward a camping experience using knowledge of different camping styles, length of the journey, and weather to advise users items that could be helpful or commonly forgotten when packing.
