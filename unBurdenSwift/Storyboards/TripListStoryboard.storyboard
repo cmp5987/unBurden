@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MXc-Gs-lYB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create a Trip-->
+        <scene sceneID="eJk-ke-OB6">
+            <objects>
+                <viewController id="QMr-9L-8j3" customClass="NewTripViewController" customModule="unBurdenSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Gw-YL-lOq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bTZ-oF-O9m">
+                                <rect key="frame" x="50" y="108" width="314" height="540.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI0-bm-HyM">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Trip Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MRn-aW-ozv">
+                                        <rect key="frame" x="0.0" y="30.5" width="314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="epi-A4-xYZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Trip Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbZ-b1-jcY">
+                                        <rect key="frame" x="0.0" y="90.5" width="314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Uqf-vq-UZ5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tell us about the trip plans..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ywO-Hn-kho">
+                                        <rect key="frame" x="0.0" y="150.5" width="314" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="PNy-jR-cUo"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Start Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoG-xY-qq0">
+                                        <rect key="frame" x="0.0" y="260.5" width="314" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="XZX-Ta-jgY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="uta-Gs-bKO">
+                                        <rect key="frame" x="0.0" y="305.5" width="314" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="sAf-TK-vH0"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select End Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKG-H4-MT0">
+                                        <rect key="frame" x="0.0" y="375.5" width="314" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="TP6-uM-rXb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="nko-Ib-sRG">
+                                        <rect key="frame" x="0.0" y="420.5" width="314" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="XVm-pS-aY9"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB2-h7-q1d">
+                                        <rect key="frame" x="0.0" y="490.5" width="314" height="50"/>
+                                        <color key="backgroundColor" red="0.57572549579999999" green="0.74243438240000004" blue="0.63919955490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UMi-1k-wJG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="22"/>
+                                        <state key="normal" title="Create the Trip">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createButtonTapped:" destination="QMr-9L-8j3" eventType="touchUpInside" id="iJX-7W-m5p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bTZ-oF-O9m" firstAttribute="top" secondItem="nrN-xu-lxz" secondAttribute="top" constant="20" id="DFg-74-ajq"/>
+                            <constraint firstItem="bTZ-oF-O9m" firstAttribute="leading" secondItem="3Gw-YL-lOq" secondAttribute="leadingMargin" constant="30" id="Mhx-BI-nOt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bTZ-oF-O9m" secondAttribute="trailing" constant="30" id="RYh-3S-qs7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nrN-xu-lxz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create a Trip" id="r8t-uK-efL"/>
+                    <connections>
+                        <outlet property="createTripButton" destination="gB2-h7-q1d" id="68u-Ek-w3a"/>
+                        <outlet property="endDatePicker" destination="nko-Ib-sRG" id="GVV-Kn-2bu"/>
+                        <outlet property="errorLabel" destination="wI0-bm-HyM" id="DPm-kH-tkB"/>
+                        <outlet property="startDatePicker" destination="uta-Gs-bKO" id="9u4-K4-ugw"/>
+                        <outlet property="tripDescTextView" destination="ywO-Hn-kho" id="bEm-2k-Pfv"/>
+                        <outlet property="tripLocationTextField" destination="bbZ-b1-jcY" id="nsw-ds-Bqc"/>
+                        <outlet property="tripNameTextField" destination="MRn-aW-ozv" id="xeN-hv-0Zm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWP-TO-vpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2615.9420289855075" y="1330.5803571428571"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="X4d-kp-h01">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBar" id="gnJ-0C-KIQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="miC-86-TTu"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dfC-QI-ja3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EXy-5H-f5L" kind="relationship" relationship="viewControllers" id="Sw7-X0-Qc7"/>
+                        <segue destination="uXK-ib-uNk" kind="relationship" relationship="viewControllers" id="MKP-L6-kcx"/>
+                        <segue destination="7EY-mq-adf" kind="relationship" relationship="viewControllers" id="6ma-Pa-qiz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jsw-iy-ImG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="2064"/>
+        </scene>
+        <!--TripDetailsStoryboard-->
+        <scene sceneID="woG-3J-0U8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TripDetailsStoryboard" id="EXy-5H-f5L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9rj-UZ-SnV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PoI-8D-j4B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2874" y="1909"/>
+        </scene>
+        <!--ToPackStoryboard-->
+        <scene sceneID="nsC-o2-APE">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ToPack" storyboardName="ToPackStoryboard" id="uXK-ib-uNk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="kaD-5R-wk3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhE-ET-dZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2874" y="2061"/>
+        </scene>
+        <!--PackedStoryboard-->
+        <scene sceneID="9rR-IB-qJV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PackedStoryboard" id="7EY-mq-adf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QVR-bM-WYz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8TQ-4q-MvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2874" y="2219"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CDG-Rd-ft1">
+            <objects>
+                <navigationController id="MXc-Gs-lYB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nWt-Dt-g0u">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sZB-LX-1kt">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="wF7-sn-nID" kind="relationship" relationship="rootViewController" id="osb-8C-gbn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48o-8y-cfS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="1331"/>
+        </scene>
+        <!--Trip List-->
+        <scene sceneID="2pg-wk-r07">
+            <objects>
+                <tableViewController storyboardIdentifier="HomeVC" id="wF7-sn-nID" customClass="TripListTableViewController" customModule="unBurdenSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IwR-gf-zHK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tripcell" rowHeight="50" id="NvD-2y-q3j" customClass="TripListCell" customModule="unBurdenSwift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NvD-2y-q3j" id="zG0-cB-4RG">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9m-re-gSn">
+                                            <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="aXx-k8-TsJ"/>
+                                                <constraint firstAttribute="width" constant="30" id="z3v-8y-uSt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozv-xA-dnZ">
+                                            <rect key="frame" x="48" y="6" width="42" height="38"/>
+                                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ozv-xA-dnZ" firstAttribute="centerY" secondItem="zG0-cB-4RG" secondAttribute="centerY" id="FEh-Va-qkQ"/>
+                                        <constraint firstItem="O9m-re-gSn" firstAttribute="top" secondItem="zG0-cB-4RG" secondAttribute="top" constant="10" id="jlH-XV-fHO"/>
+                                        <constraint firstItem="Ozv-xA-dnZ" firstAttribute="leading" secondItem="O9m-re-gSn" secondAttribute="trailing" constant="8" id="krD-VR-zh9"/>
+                                        <constraint firstItem="O9m-re-gSn" firstAttribute="leading" secondItem="zG0-cB-4RG" secondAttribute="leading" constant="10" id="uuC-ik-WYF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImage" destination="O9m-re-gSn" id="bYG-7R-EMa"/>
+                                    <outlet property="cellLabel" destination="Ozv-xA-dnZ" id="d9N-Dl-nEU"/>
+                                    <segue destination="gnJ-0C-KIQ" kind="show" id="RIH-Xo-H4T"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wF7-sn-nID" id="dhz-Q0-8Uh"/>
+                            <outlet property="delegate" destination="wF7-sn-nID" id="lDc-3h-387"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Trip List" id="gdQ-XA-PdO">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="c6m-9g-g8h">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KkT-0X-xr0">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="wF7-sn-nID" eventType="touchUpInside" id="wqt-ot-Re0"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="SrW-sc-OiP">
+                            <color key="tintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="addTripTapped:" destination="wF7-sn-nID" id="id1-YC-WxJ"/>
+                                <segue destination="QMr-9L-8j3" kind="show" id="n90-El-DbT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addTripButton" destination="SrW-sc-OiP" id="Uyx-uk-Oaa"/>
+                        <outlet property="logoutButton" destination="KkT-0X-xr0" id="bx9-x8-rZP"/>
+                        <outlet property="table" destination="IwR-gf-zHK" id="dXZ-qQ-uwG"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kba-wD-Iu9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650.7246376811595" y="1330.5803571428571"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>

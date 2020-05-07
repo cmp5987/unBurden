@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>static_options</key>
+	<array>
+		<dict>
+			<key>image</key>
+			<string>cooking.png</string>
+			<key>category</key>
+			<string>cooking</string>
+			<key>suggestions</key>
+			<array>
+				<string>Pots</string>
+				<string>Cutting Board</string>
+				<string>Zip Lock Bags</string>
+				<string>Aluminum Foil</string>
+				<string>Spatula</string>
+				<string>Tongs</string>
+				<string>Trash Bags</string>
+				<string>Paper Towels</string>
+				<string>Napkins</string>
+				<string>Water Bottles</string>
+				<string>Knives</string>
+				<string>Forks</string>
+				<string>Plates</string>
+				<string>Butane Lighter</string>
+				<string>Hot Dog Sticks</string>
+				<string>Matches</string>
+				<string>Charcoal</string>
+				<string>Bottle Opener</string>
+				<string>Can Opener</string>
+				<string>Mess Kit</string>
+				<string>Cooler</string>
+				<string>Water Pitcher</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>nil</string>
+			<key>category</key>
+			<string>misc</string>
+			<key>suggestions</key>
+			<array>
+				<string>Fire Starter</string>
+				<string>Canteen</string>
+				<string>Whistle</string>
+				<string>Sunblock</string>
+				<string>Rope</string>
+				<string>Lantern</string>
+				<string>GPS</string>
+				<string>Pen &amp; Paper</string>
+				<string>Flash Light</string>
+				<string>Duct Tape</string>
+				<string>Compass</string>
+				<string>Portable Battery</string>
+				<string>Cell Phone</string>
+				<string>Camera</string>
+				<string>Bungi Cords</string>
+				<string>Bug Spray</string>
+				<string>Binoculars</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>hygiene</string>
+			<key>category</key>
+			<string>hygiene</string>
+			<key>suggestions</key>
+			<array>
+				<string>Toothbrush</string>
+				<string>Washcloths</string>
+				<string>Towels</string>
+				<string>Soap</string>
+				<string>Shampoo</string>
+				<string>Brush</string>
+				<string>Nail Clippers</string>
+				<string>Mirror</string>
+				<string>Razor</string>
+				<string>Toothpaste</string>
+				<string>Toilet Paper</string>
+				<string>Pads or Tampons</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>fistaid.png</string>
+			<key>category</key>
+			<string>firstaid</string>
+			<key>suggestions</key>
+			<array>
+				<string>Snakebite Kit</string>
+				<string>Eyewash</string>
+				<string>Tweezers</string>
+				<string>Scissors</string>
+				<string>Hydrogen Peroxide</string>
+				<string>Sunburn Lotion</string>
+				<string>Burn Ointment</string>
+				<string>Antiseptic Cream</string>
+				<string>Elastic Wrap</string>
+				<string>Sterile Gauze</string>
+				<string>Medical Tape</string>
+				<string>Asprin</string>
+				<string>Bandages</string>
+				<string>Medication</string>
+				<string>Personal Medication</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>meals.png</string>
+			<key>category</key>
+			<string>meals</string>
+			<key>suggestions</key>
+			<array>
+				<string>Coffee</string>
+				<string>Tea</string>
+				<string>Tomato Sauce</string>
+				<string>Pasta</string>
+				<string>Canned Soup</string>
+				<string>Canned Beans</string>
+				<string>Jelly</string>
+				<string>Peanut Butter</string>
+				<string>Bread</string>
+				<string>Eggs</string>
+				<string>Dried Fruit</string>
+				<string>Granola</string>
+				<string>Cereal</string>
+				<string>Energy Bars</string>
+				<string>Ketchup</string>
+				<string>Hamburgers</string>
+				<string>Hot Dogs</string>
+				<string>Cooking Oil</string>
+				<string>Herbs &amp; Spices</string>
+				<string>Pepper</string>
+				<string>Salt</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>clothes.png</string>
+			<key>category</key>
+			<string>clothing</string>
+			<key>suggestions</key>
+			<array>
+				<string>T-Shirt</string>
+				<string>Shorts</string>
+				<string>Socks</string>
+				<string>Shoes</string>
+				<string>Hats</string>
+				<string>Sweaters</string>
+				<string>Rain Ponchos</string>
+				<string>Underwear</string>
+				<string>Bras</string>
+				<string>Swimsuit</string>
+				<string>Pants</string>
+				<string>Sandles</string>
+				<string>Jackets</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>shelter.png</string>
+			<key>category</key>
+			<string>shelter</string>
+			<key>suggestions</key>
+			<array>
+				<string>Table Cloth</string>
+				<string>Folding Chairs</string>
+				<string>Folding Table</string>
+				<string>Throw Rug</string>
+				<string>Comforter</string>
+				<string>Blankets</string>
+				<string>Cots</string>
+				<string>Pillows</string>
+				<string>Sleeping Bags</string>
+				<string>Sleeping Pads</string>
+				<string>Tarps</string>
+				<string>Tents</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

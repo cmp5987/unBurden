@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qru-z2-LF9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trip Details-->
+        <scene sceneID="h2q-eR-SbG">
+            <objects>
+                <navigationController storyboardIdentifier="TripDetails" id="qru-z2-LF9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trip Details" image="calendar.circle.fill" catalog="system" id="rzX-1H-EZ6">
+                        <color key="badgeColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D3B-R4-urU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NAr-AV-zUU" kind="relationship" relationship="rootViewController" id="oN0-2V-XDM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ami-qF-5K9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-297" y="147"/>
+        </scene>
+        <!--Trip Details-->
+        <scene sceneID="O6Z-0Z-VmH">
+            <objects>
+                <viewController id="NAr-AV-zUU" customClass="TripDetailViewController" customModule="unBurdenSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p0q-qc-frr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starter3" translatesAutoresizingMaskIntoConstraints="NO" id="kim-GL-iJm">
+                                <rect key="frame" x="157" y="138" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BAc-S0-zuJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="MTq-7u-fLQ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rv6-LF-xgd">
+                                <rect key="frame" x="30" y="268" width="354" height="269"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Undefined Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUV-dT-zoD">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ZLU-cW-kjR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date - Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS0-7L-N8E">
+                                        <rect key="frame" x="0.0" y="49" width="354" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="BC8-7z-nvX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUZ-rT-NNc">
+                                        <rect key="frame" x="0.0" y="84" width="354" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="58m-RL-a4N"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lrL-04-C2n">
+                                        <rect key="frame" x="0.0" y="119" width="354" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="PMb-4d-sfD"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X0V-dc-Ud2" firstAttribute="trailing" secondItem="Rv6-LF-xgd" secondAttribute="trailing" constant="30" id="55l-5G-8yr"/>
+                            <constraint firstItem="Rv6-LF-xgd" firstAttribute="top" secondItem="kim-GL-iJm" secondAttribute="bottom" constant="30" id="CN3-7C-PS8"/>
+                            <constraint firstItem="kim-GL-iJm" firstAttribute="top" secondItem="X0V-dc-Ud2" secondAttribute="top" constant="50" id="DW8-UO-zID"/>
+                            <constraint firstItem="kim-GL-iJm" firstAttribute="centerX" secondItem="p0q-qc-frr" secondAttribute="centerX" id="JGJ-Et-Ygv"/>
+                            <constraint firstItem="Rv6-LF-xgd" firstAttribute="leading" secondItem="X0V-dc-Ud2" secondAttribute="leading" constant="30" id="gFS-Vk-VPO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X0V-dc-Ud2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trip Details" id="F6c-th-cEy">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="M4H-BD-Wzd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7e5-hS-JJM">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="NAr-AV-zUU" eventType="touchUpInside" id="m8I-k8-7xo"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dateLabel" destination="CS0-7L-N8E" id="7Ae-KW-oX4"/>
+                        <outlet property="deleteButton" destination="7e5-hS-JJM" id="Erv-ZI-Qkp"/>
+                        <outlet property="descTextView" destination="lrL-04-C2n" id="cxq-T6-oE2"/>
+                        <outlet property="locationLabel" destination="LUZ-rT-NNc" id="WX1-oQ-hUX"/>
+                        <outlet property="nameLabel" destination="pUV-dT-zoD" id="klg-2a-ZVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7nM-BI-nUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644.92753623188412" y="146.65178571428569"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.51859476579999997" green="0.66976226949999995" blue="0.58314242130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <image name="calendar.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="starter3" width="512" height="512"/>
+    </resources>
+</document>

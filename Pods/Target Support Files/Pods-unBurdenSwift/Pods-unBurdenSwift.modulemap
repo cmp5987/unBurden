@@ -1,0 +1,6 @@
+framework module Pods_unBurdenSwift {
+  umbrella header "Pods-unBurdenSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
